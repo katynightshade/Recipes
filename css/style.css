@@ -20,11 +20,17 @@ a {
 
 nav {
     display: none;
+    list-style-type: none;
 }
 
 .mobile-menu {
     cursor: pointer;
     margin: 0 3%;
+}
+
+.mobile-menu-exit {
+    max-width: 25px;
+    padding: 15px;
 }
 
 .header {
