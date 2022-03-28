@@ -1,0 +1,28 @@
+#main-head {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: cadetblue;
+    padding: 5px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.headers {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(23, 71, 23);
+    color: antiquewhite;
+    text-align: center;
+    padding: 5px;
+}
+
+.sub-head {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
