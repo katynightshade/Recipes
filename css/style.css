@@ -85,9 +85,13 @@ section {
     max-height: 95%;
 }
 
+.btn-front {
+    max-height: 95%;
+}
+
 .box-img {
     max-width: 95%;
-    max-height: 75%;
+    max-height: 70%;
 }
 
 .box-text {
