@@ -85,8 +85,9 @@ section {
     max-height: 95%;
 }
 
-.btn-front {
-    max-height: 95%;
+
+.btn-back {
+    display: none;
 }
 
 .box-img {
@@ -95,7 +96,7 @@ section {
 }
 
 .box-text {
-    margin: 0;
+    margin-top: -5px;
     padding: 10px;
     color: #2e1f12;
     font-family: 'Ubuntu', sans-serif;
