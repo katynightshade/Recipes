@@ -68,7 +68,6 @@ section {
     border-radius: 5px;
     max-width: 45vw;
     cursor: pointer;
-    max-height: 200px;
     background-color: white;
 }
 
@@ -92,7 +91,6 @@ section {
 
 .box-img {
     max-width: 95%;
-    max-height: 70%;
 }
 
 .box-text {
