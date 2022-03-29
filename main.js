@@ -18,6 +18,5 @@ menuOpen.addEventListener(('click'), () =>  {
 
 menuExit.addEventListener(('click'), () => {
     navigation.style.display = 'none';
-    menuOpen.style.display = 'initial';
-    header.style.display = 'inherit';
+    menuOpen.style.display = '';
 });

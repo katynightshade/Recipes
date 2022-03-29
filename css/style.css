@@ -20,7 +20,6 @@ a {
 
 nav {
     display: none;
-    list-style-type: none;
 }
 
 .mobile-menu {
@@ -37,7 +36,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 10px;
     max-width: 95vw;
     background-color: #d47257;
     border-radius: 5px;
