@@ -29,6 +29,10 @@ const sectionImg = document.querySelectorAll('.box-img');
 
 //want to create hover animation to turn/open button to allow for selection from recipes list.
 
-/*sections.addEventListener('click', () => {
-
-});*/
+btnFront.addEventListener('click', () => {
+    btnFront.style.transform = 'rotateY(90deg)';
+    btnBack.style.display = 'flex';
+    btnBack.style.flexDirection = 'column';
+    btnBack.style.gap = '1em';
+    btnFront.style.display = 'none';
+});
