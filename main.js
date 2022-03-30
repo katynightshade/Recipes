@@ -5,8 +5,20 @@ const title = document.querySelector('.title');
 const header = document.querySelector('.header');
 const navList = document.querySelector('.nav-list');
 const sections = document.querySelectorAll('.boxes');
-const wow = document.getElementById('wow-box');
+const wowImg = document.getElementById('wow-img');
+const starWarsImg = document.getElementById('sw-img');
 
+function sectionHeight() {
+    let wowImgHeight = wowImg.style.height;
+    let starWarsImgHeight = starWarsImg.style.height;
+    if (wowImgHeight > starWarsImgHeight) {
+        wowImg.style.maxHeight = starWarsImgHeight;
+    } else {
+        wowImg.style.maxHeight = '95%';
+    }
+}
+
+sectionHeight();
 
 menuOpen.addEventListener(('click'), () =>  {
     navigation.style.display = 'flex';
