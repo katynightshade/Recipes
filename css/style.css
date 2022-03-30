@@ -95,11 +95,16 @@ section {
     max-width: 95%;
 }
 
+#dune-img {
+    border-radius: 10px;
+    box-shadow: white inset;
+}
+
 .box-text {
     padding: 10px;
     color: #2e1f12;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 25px;
+    font-size: 95%;
 }
 
 .footer {

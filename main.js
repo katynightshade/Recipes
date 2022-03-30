@@ -8,18 +8,6 @@ const sections = document.querySelectorAll('.boxes');
 const wowImg = document.getElementById('wow-img');
 const starWarsImg = document.getElementById('sw-img');
 
-function sectionHeight() {
-    let wowImgHeight = wowImg.style.height;
-    let starWarsImgHeight = starWarsImg.style.height;
-    if (wowImgHeight > starWarsImgHeight) {
-        wowImg.style.maxHeight = starWarsImgHeight;
-    } else {
-        wowImg.style.maxHeight = '95%';
-    }
-}
-
-sectionHeight();
-
 menuOpen.addEventListener(('click'), () =>  {
     navigation.style.display = 'flex';
     navigation.style.flexDirection = 'column';
