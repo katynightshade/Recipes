@@ -23,9 +23,12 @@ menuExit.addEventListener(('click'), () => {
     menuOpen.style.display = 'initial';
 });
 
-
-const mainText = document.querySelectorAll('.box-text');
-const flipText = document.querySelectorAll('.flip-text');
+const btnFront = document.getElementById('btn-front');
+const btnBack = document.getElementById('btn-back');
 const sectionImg = document.querySelectorAll('.box-img');
 
 //want to create hover animation to turn/open button to allow for selection from recipes list.
+
+/*sections.addEventListener('click', () => {
+
+});*/

@@ -87,7 +87,7 @@ section {
 }
 
 
-.btn-back {
+#btn-back {
     display: none;
 }
 
@@ -97,7 +97,6 @@ section {
 
 #dune-img {
     border-radius: 10px;
-    box-shadow: white inset;
 }
 
 .box-text {
