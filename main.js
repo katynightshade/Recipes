@@ -5,8 +5,6 @@ const title = document.querySelector('.title');
 const header = document.querySelector('.header');
 const navList = document.querySelector('.nav-list');
 const sections = document.querySelectorAll('.boxes');
-const wowImg = document.getElementById('wow-img');
-const starWarsImg = document.getElementById('sw-img');
 
 menuOpen.addEventListener(('click'), () =>  {
     navigation.style.display = 'flex';
@@ -25,9 +23,21 @@ menuExit.addEventListener(('click'), () => {
 
 const btnFront = document.querySelectorAll('.btn-front');
 const btnBack = document.querySelectorAll('.btn-back');
-const sectionImg = document.querySelectorAll('.box-img');
+const sectionIds = document.querySelectorAll('.boxes');
+let gridIds = [];
 
-//want to create hover animation to turn/open button to allow for selection from recipes list.
+for (let i = 0; i < sectionIds.length; i++) {
+    gridIds.push(sectionIds[i].id);
+}
+
+let gridLeft = {
+    1: gridIds[0],
+    2: gridIds[2],
+    3: gridIds[4],
+    4: gridIds[6],
+}
+console.log(gridLeft);
+
 
 for (let i = 0; i < btnFront.length; i++) {
     for (let i = 0; i < btnBack.length; i++) {
@@ -38,7 +48,11 @@ for (let i = 0; i < btnFront.length; i++) {
                 btnBack[i].style.flexDirection = 'column';
                 btnBack[i].style.gap = '1em';
                 sections[i].style.transition = 'transform 1s';
-                sections[i].style.transform = 'translate(50%) scale(2)';
+                if (gridLeft) {
+                    sections[i].style.transform = 'translate(50%) scale(2)';
+                } else {
+                    sections[i].style.transform = 'translate(-50%) scale(2)'
+                }
                 sections[i].style.position = 'relative';
             });
             btnBack[i].addEventListener('click', () => {
