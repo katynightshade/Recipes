@@ -23,16 +23,25 @@ menuExit.addEventListener(('click'), () => {
     menuOpen.style.display = 'initial';
 });
 
-const btnFront = document.getElementById('btn-front');
-const btnBack = document.getElementById('btn-back');
+const btnFront = document.querySelectorAll('.btn-front');
+const btnBack = document.querySelectorAll('.btn-back');
 const sectionImg = document.querySelectorAll('.box-img');
 
 //want to create hover animation to turn/open button to allow for selection from recipes list.
 
-btnFront.addEventListener('click', () => {
-    btnFront.style.transform = 'rotateY(90deg)';
-    btnBack.style.display = 'flex';
-    btnBack.style.flexDirection = 'column';
-    btnBack.style.gap = '1em';
-    btnFront.style.display = 'none';
-});
+for (let i = 0; i < btnFront.length; i++) {
+    for (let i = 0; i < btnBack.length; i++) {
+        btnFront[i].addEventListener('click', () => {
+            btnFront[i].style.transform = 'rotateY(90deg)';
+            btnFront[i].style.display = 'none';
+            btnBack[i].style.display = 'flex';
+            btnBack[i].style.flexDirection = 'column';
+            btnBack[i].style.gap = '1em';
+        });
+        btnBack[i].addEventListener('click', () => {
+            btnBack[i].style.transform = 'rotateY(270deg)';
+            btnBack[i].style.display = 'none';
+            btnFront[i].style.display = 'initial';
+        });
+    };
+}
