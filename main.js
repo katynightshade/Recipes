@@ -48,13 +48,17 @@ for (let i = 0; i < btnFront.length; i++) {
                     btnBack[i].style.gap = '1em';
                     sections[i].style.transition = 'transform 1s';
                     if (sections[i].id == gridLeft[0]) {
-                        sections[i].style.transform = 'translate(50%) scale(2)';
+                        sections[i].style.transform = 'translate(50%, 50%) scale(2)';
                     } else if (sections[i].id == gridLeft[1]) {
                         sections[i].style.transform = 'translate(50%) scale(2)';
                     } else if (sections[i].id == gridLeft[2]) {
                         sections[i].style.transform = 'translate(50%) scale(2)';
                     } else if (sections[i].id == gridLeft[3]) {
-                        sections[i].style.transform = 'translate(50%) scale(2)';
+                        sections[i].style.transform = 'translate(50%, -50%) scale(2)';
+                    } else if ( sections[i].id == gridRight[0]) {
+                        sections[i].style.transform = 'translate(-50%, 50%) scale(2)';
+                    } else if ( sections[i].id == gridRight[3]) {
+                        sections[i].style.transform = 'translate(-50%, -50%) scale(2)';
                     } else {
                         sections[i].style.transform = 'translate(-50%) scale(2)';
                     }
