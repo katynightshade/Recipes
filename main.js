@@ -23,43 +23,51 @@ menuExit.addEventListener(('click'), () => {
 
 const btnFront = document.querySelectorAll('.btn-front');
 const btnBack = document.querySelectorAll('.btn-back');
-const sectionIds = document.querySelectorAll('.boxes');
-let gridIds = [];
-
-for (let i = 0; i < sectionIds.length; i++) {
-    gridIds.push(sectionIds[i].id);
-}
-
-let gridLeft = {
-    1: gridIds[0],
-    2: gridIds[2],
-    3: gridIds[4],
-    4: gridIds[6],
-}
-console.log(gridLeft);
-
+const backText = document.querySelectorAll('.back-text');
+let gridLeft = [
+    document.getElementById('wow-box').id, 
+    document.getElementById('lotr-box').id, 
+    document.getElementById('botw-box').id, 
+    document.getElementById('ghibli-box').id
+]
+let gridRight = [
+    document.getElementById('hp-box').id,
+    document.getElementById('dune-box').id,
+    document.getElementById('atla-box').id,
+    document.getElementById('skyrim-box').id
+]
 
 for (let i = 0; i < btnFront.length; i++) {
-    for (let i = 0; i < btnBack.length; i++) {
-        for (let i = 0; i < sections.length; i++) {
-            btnFront[i].addEventListener('click', () => {
-                btnFront[i].style.display = 'none';
-                btnBack[i].style.display = 'flex';
-                btnBack[i].style.flexDirection = 'column';
-                btnBack[i].style.gap = '1em';
-                sections[i].style.transition = 'transform 1s';
-                if (gridLeft) {
-                    sections[i].style.transform = 'translate(50%) scale(2)';
-                } else {
-                    sections[i].style.transform = 'translate(-50%) scale(2)'
-                }
-                sections[i].style.position = 'relative';
-            });
-            btnBack[i].addEventListener('click', () => {
-                btnBack[i].style.display = 'none';
-                btnFront[i].style.display = 'initial';
-                sections[i].style.transform = 'initial';
-            });
-        }
+    for (let i = 0; i < backText.length; i++) {
+        for (let i = 0; i < btnBack.length; i++) {
+            for (let i = 0; i < sections.length; i++) {
+                btnFront[i].addEventListener('click', () => {
+                    btnFront[i].style.display = 'none';
+                    btnBack[i].style.display = 'flex';
+                    btnBack[i].style.flexDirection = 'column';
+                    btnBack[i].style.gap = '1em';
+                    sections[i].style.transition = 'transform 1s';
+                    if (sections[i].id == gridLeft[0]) {
+                        sections[i].style.transform = 'translate(50%) scale(2)';
+                    } else if (sections[i].id == gridLeft[1]) {
+                        sections[i].style.transform = 'translate(50%) scale(2)';
+                    } else if (sections[i].id == gridLeft[2]) {
+                        sections[i].style.transform = 'translate(50%) scale(2)';
+                    } else if (sections[i].id == gridLeft[3]) {
+                        sections[i].style.transform = 'translate(50%) scale(2)';
+                    } else {
+                        sections[i].style.transform = 'translate(-50%) scale(2)';
+                    }
+                    sections[i].style.position = 'relative';
+                    sections[i].style.zIndex = '1';
+                });
+                backText[i].addEventListener('click', () => {
+                    btnBack[i].style.display = 'none';
+                    btnFront[i].style.display = 'initial';
+                    sections[i].style.transform = 'initial';
+                    sections[i].style.zIndex = '0';
+                });
+            }
+        };
     };
 }
