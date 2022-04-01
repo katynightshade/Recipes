@@ -23,22 +23,22 @@ menuExit.addEventListener(('click'), () => {
 
 const btnFront = document.querySelectorAll('.btn-front');
 const btnBack = document.querySelectorAll('.btn-back');
-const backText = document.querySelectorAll('.back-text');
+const goBack = document.querySelectorAll('.back-btn');
 let gridLeft = [
     document.getElementById('wow-box').id, 
     document.getElementById('lotr-box').id, 
     document.getElementById('botw-box').id, 
     document.getElementById('ghibli-box').id
-]
+];
 let gridRight = [
     document.getElementById('hp-box').id,
     document.getElementById('dune-box').id,
     document.getElementById('atla-box').id,
     document.getElementById('skyrim-box').id
-]
+];
 
 for (let i = 0; i < btnFront.length; i++) {
-    for (let i = 0; i < backText.length; i++) {
+    for (let i = 0; i < goBack.length; i++) {
         for (let i = 0; i < btnBack.length; i++) {
             for (let i = 0; i < sections.length; i++) {
                 btnFront[i].addEventListener('click', () => {
@@ -46,6 +46,7 @@ for (let i = 0; i < btnFront.length; i++) {
                     btnBack[i].style.display = 'flex';
                     btnBack[i].style.flexDirection = 'column';
                     btnBack[i].style.gap = '1em';
+                    btnBack[i].style.alignItems = 'center';
                     sections[i].style.transition = 'transform 1s';
                     if (sections[i].id == gridLeft[0]) {
                         sections[i].style.transform = 'translate(50%, 50%) scale(2)';
@@ -65,7 +66,7 @@ for (let i = 0; i < btnFront.length; i++) {
                     sections[i].style.position = 'relative';
                     sections[i].style.zIndex = '1';
                 });
-                backText[i].addEventListener('click', () => {
+                goBack[i].addEventListener('click', () => {
                     btnBack[i].style.display = 'none';
                     btnFront[i].style.display = 'initial';
                     sections[i].style.transform = 'initial';
