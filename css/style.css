@@ -12,7 +12,7 @@ html {
     background-image: linear-gradient(#3d2a19, #d47257);
 }
 
-a {
+.main-links {
     text-decoration: none;
     cursor: pointer;
     color: #2e1f12;
@@ -118,4 +118,177 @@ section {
     padding: 25px;
     text-align: center;
     color: #685c62;
+}
+
+/*general recipe page settings*/
+
+.recipe-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img {
+    max-width: 90vw;
+    max-height: 50vh;
+}
+
+.img-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ing-title {
+    text-align: center;
+}
+
+.steps-title {
+    text-align: center;
+}
+
+.extra-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.directory {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/*wow settings*/
+
+.wow-page {
+    height: 100%;
+    margin: 10px;
+    display: inline-block;
+    font-family: 'Cinzel', sans-serif;
+    background-image: linear-gradient(#2a0449, #c599e9);
+}
+
+.wow-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 95vw;
+    background-color: #b3c996f3;
+    border-radius: 5px;
+}
+
+.wow-title {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 0 3%;
+    font-size: 13px;
+}
+
+.wow-links {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(18, 38, 107);
+}
+
+.hero-wow1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+}
+
+.title-wow1 {
+    font-size: 25px;
+    color: #fed337;
+    text-align: center;
+}
+
+.wow-citation {
+    padding: 15px;
+    border: 2px solid #2a0449;
+}
+
+.wow-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+/*hp settings*/
+
+.hp-page {
+    height: 100%;
+    margin: 10px;
+    display: inline-block;
+    font-family: 'Cinzel', sans-serif;
+    background-image: linear-gradient(black, silver);
+}
+
+.hp-links {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(8, 71, 8);
+}
+
+.hp-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 95vw;
+    background-color: rgb(141, 15, 15);
+    border-radius: 5px;
+}
+
+.hp-title {
+    text-align: center;
+    text-decoration: none;
+    color: #fed337;
+    margin: 0 3%;
+    font-size: 13px;
+}
+
+.hero-hp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+}
+
+.title-hp {
+    font-size: 25px;
+    color: rgb(243, 237, 209);
+    text-align: center;
+}
+
+.hp-citation {
+    padding: 15px;
+    border: 2px solid rgb(25, 25, 141);
+}
+
+.hpdir-title {
+    text-align: center;
+    color: rgb(243, 237, 209);
+}
+
+.hp-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid rgb(8, 71, 8);
+    background-color: rgb(8, 71, 8);
+    border-radius: 5px;
+}
+
+.hp-section > a {
+    color: rgb(243, 237, 209);
 }
