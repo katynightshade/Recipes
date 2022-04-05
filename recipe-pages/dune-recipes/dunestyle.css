@@ -1,0 +1,118 @@
+.recipe-page {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: none;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    margin: 0 3%;
+}
+
+.mobile-menu-exit {
+    max-width: 25px;
+    padding: 20px 15px;
+    cursor: pointer;
+}
+
+.hero-img {
+    max-width: 90vw;
+    max-height: 50vh;
+}
+
+.img-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ing-title {
+    text-align: center;
+}
+
+.steps-title {
+    text-align: center;
+}
+
+.extra-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.directory {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.dune-page {
+    height: 100%;
+    margin: 10px;
+    display: inline-block;
+    font-family: 'Cinzel', sans-serif;
+    background-image: linear-gradient(rgb(241, 160, 9), rgb(245, 228, 153));
+}
+
+.dune-links {
+    text-decoration: none;
+    cursor: pointer;
+    color: #f16e32;
+}
+
+.dune-page > .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 95vw;
+    background-color: rgb(238, 225, 170);
+    border-radius: 5px;
+}
+
+.dune-title {
+    text-align: center;
+    text-decoration: none;
+    color: #5cc2eb;
+    margin: 0 3%;
+    font-size: 13px;
+}
+
+
+.hero-dune {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+}
+
+.title-dune {
+    font-size: 25px;
+    color: rgb(243, 237, 209);
+    text-align: center;
+}
+
+.dune-citation {
+    padding: 15px;
+    border: 2px solid #5cc2eb;
+}
+
+.dunedir-title {
+    text-align: center;
+    color: rgb(243, 237, 209);
+}
+
+.dune-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid rgb(61, 55, 52);
+    background-color: rgb(61, 55, 52);
+    border-radius: 5px;
+}
