@@ -1,1 +1,0 @@
-For addition of files within this folder to Jekyll site.
