@@ -159,6 +159,14 @@ section {
     padding: 20px;
 }
 
+.ingredients > li {
+    margin-bottom: 5px;
+}
+
+.steps > li {
+    margin-bottom: 7px;
+}
+
 /*wow settings*/
 
 .wow-page {
@@ -210,6 +218,14 @@ section {
 .wow-citation {
     padding: 15px;
     border: 2px solid #2a0449;
+    background-color: #2a0449;
+    color: white;
+    border-radius: 5px;
+}
+
+.wowcite-link {
+    text-decoration: none;
+    color: #b3c996f3;
 }
 
 .wowdir-title {
@@ -277,6 +293,14 @@ section {
 .hp-citation {
     padding: 15px;
     border: 2px solid rgb(25, 25, 141);
+    background-color: rgb(25, 25, 141);
+    color: silver;
+    border-radius: 5px;
+}
+
+.hpcite-link {
+    text-decoration: none;
+    color: rgb(243, 237, 209);
 }
 
 .hpdir-title {
@@ -350,6 +374,13 @@ section {
 .lotr-citation {
     padding: 15px;
     border: 2px solid rgb(28, 90, 119);
+    background-color: rgb(28, 90, 119);
+    color: white;
+}
+
+.lotrcite-link {
+    text-decoration: none;
+    color: #f3c890;
 }
 
 .lotrdir-title {
@@ -380,7 +411,7 @@ section {
 .dune-links {
     text-decoration: none;
     cursor: pointer;
-    color: #f16e32;
+    color: #c04106;
 }
 
 .dune-page > .header {
@@ -418,7 +449,14 @@ section {
 
 .dune-citation {
     padding: 15px;
-    border: 2px solid #5cc2eb;
+    border: 2px solid #c04106;
+    background-color: #c04106;
+    border-radius: 5px;
+}
+
+.dunecite-link {
+    text-decoration: none;
+    color: #5cc2eb;
 }
 
 .dunedir-title {
@@ -431,7 +469,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 3px solid rgb(61, 55, 52);
-    background-color: rgb(61, 55, 52);
+    border: 3px solid rgb(138, 133, 131);
+    background-color: rgb(138, 133, 131);
     border-radius: 5px;
 }
