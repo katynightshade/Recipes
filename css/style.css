@@ -375,6 +375,7 @@ section {
     padding: 15px;
     border: 2px solid rgb(28, 90, 119);
     background-color: rgb(28, 90, 119);
+    border-radius: 5px;
     color: white;
 }
 
