@@ -568,7 +568,7 @@ section {
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
-    background-image: linear-gradient(rgb(142, 201, 66), rgb(243, 235, 201));
+    background-image: linear-gradient(rgb(91, 169, 241), rgb(252, 249, 236));
 }
 
 .atla-links {
@@ -583,14 +583,14 @@ section {
     align-items: center;
     padding: 10px;
     max-width: 95vw;
-    background-color: rgb(243, 235, 201);
+    background-color: rgb(25, 121, 41);
     border-radius: 5px;
 }
 
 .atla-title {
     text-align: center;
     text-decoration: none;
-    color: #5cc2eb;
+    color: #4b3012;
     margin: 0 3%;
     font-size: 13px;
 }
@@ -634,8 +634,8 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 3px solid #5cc2eb;
-    background-color: #5cc2eb;
+    border: 3px solid #b64d07;
+    background-color: #b64d07;
     border-radius: 5px;
 }
 
@@ -646,13 +646,13 @@ section {
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
-    background-image: linear-gradient(rgb(142, 201, 66), rgb(243, 235, 201));
+    background-image: linear-gradient(rgb(107, 94, 64), rgb(243, 235, 201));
 }
 
 .ghibli-links {
     text-decoration: none;
     cursor: pointer;
-    color: #1e515a;
+    color: #2a866f;
 }
 
 .ghibli-page > .header {
@@ -661,14 +661,14 @@ section {
     align-items: center;
     padding: 10px;
     max-width: 95vw;
-    background-color: rgb(243, 235, 201);
+    background-color: #ebe95c;
     border-radius: 5px;
 }
 
 .ghibli-title {
     text-align: center;
     text-decoration: none;
-    color: #5cc2eb;
+    color: #194430;
     margin: 0 3%;
     font-size: 13px;
 }
@@ -684,25 +684,26 @@ section {
 
 .title-ghibli {
     font-size: 25px;
-    color: rgb(78, 62, 16);
+    color: rgb(243, 235, 201);
     text-align: center;
 }
 
 .ghibli-citation {
     padding: 15px;
-    border: 2px solid #5cc2eb;
-    background-color: #5cc2eb;
+    border: 2px solid #1c4574;
+    background-color: #1c4574;
     border-radius: 5px;
+    color: white;
 }
 
 .ghiblicite-link {
     text-decoration: none;
-    color: rgb(78, 62, 16);
+    color: rgb(218, 204, 164);
 }
 
 .ghiblidir-title {
     text-align: center;
-    color: #5cc2eb;
+    color: #194430;
     text-decoration: none;
     font-size: 13px;
 }
@@ -712,7 +713,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 3px solid #5cc2eb;
-    background-color: #5cc2eb;
+    border: 3px solid #1c4574;
+    background-color: #1c4574;
     border-radius: 5px;
 }
