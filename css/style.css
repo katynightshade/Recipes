@@ -717,3 +717,90 @@ section {
     background-color: #1c4574;
     border-radius: 5px;
 }
+
+/*skyrim settings*/
+
+.skyrim-page {
+    height: 100%;
+    margin: 10px;
+    display: inline-block;
+    font-family: 'Cinzel', sans-serif;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(88, 88, 88));
+}
+
+.skyrim-links {
+    text-decoration: none;
+    cursor: pointer;
+    color: #3d1572;
+}
+
+.skyrim-page > .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 95vw;
+    background-color: #b4b4b4;
+    border-radius: 5px;
+}
+
+.skyrim-title {
+    text-align: center;
+    text-decoration: none;
+    color: #194430;
+    margin: 0 3%;
+    font-size: 13px;
+}
+
+
+.hero-skyrim {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+}
+
+.title-skyrim {
+    font-size: 25px;
+    color: rgb(243, 235, 201);
+    text-align: center;
+}
+
+.hero-skyrim > cite {
+    color: white;
+}
+
+.main-skyrim {
+    color: white;
+}
+
+.skyrim-citation {
+    padding: 15px;
+    border: 2px solid #233242;
+    background-color: #233242;
+    border-radius: 5px;
+    color: white;
+}
+
+.skyrimcite-link {
+    text-decoration: none;
+    color: rgb(218, 204, 164);
+}
+
+.skyrimdir-title {
+    text-align: center;
+    color: #194430;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.skyrim-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #5a799c;
+    background-color: #5a799c;
+    border-radius: 5px;
+}
