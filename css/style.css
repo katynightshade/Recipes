@@ -15,7 +15,7 @@ html {
 .main-links {
     text-decoration: none;
     cursor: pointer;
-    color: #2e1f12;
+    color: #995820;
 }
 
 nav {
@@ -548,6 +548,84 @@ section {
 }
 
 .botw-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #5cc2eb;
+    background-color: #5cc2eb;
+    border-radius: 5px;
+}
+
+/*atla settings*/
+
+.atla-page {
+    height: 100%;
+    margin: 10px;
+    display: inline-block;
+    font-family: 'Cinzel', sans-serif;
+    background-image: linear-gradient(rgb(142, 201, 66), rgb(243, 235, 201));
+}
+
+.atla-links {
+    text-decoration: none;
+    cursor: pointer;
+    color: #1e515a;
+}
+
+.atla-page > .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 95vw;
+    background-color: rgb(243, 235, 201);
+    border-radius: 5px;
+}
+
+.atla-title {
+    text-align: center;
+    text-decoration: none;
+    color: #5cc2eb;
+    margin: 0 3%;
+    font-size: 13px;
+}
+
+
+.hero-atla {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+}
+
+.title-atla {
+    font-size: 25px;
+    color: rgb(78, 62, 16);
+    text-align: center;
+}
+
+.atla-citation {
+    padding: 15px;
+    border: 2px solid #5cc2eb;
+    background-color: #5cc2eb;
+    border-radius: 5px;
+}
+
+.atlacite-link {
+    text-decoration: none;
+    color: rgb(78, 62, 16);
+}
+
+.atladir-title {
+    text-align: center;
+    color: #5cc2eb;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.atla-section {
     display: flex;
     justify-content: center;
     align-items: center;
