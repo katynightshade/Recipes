@@ -8,11 +8,11 @@ const sections = document.querySelectorAll('.boxes');
 
 menuOpen.addEventListener(('click'), () =>  {
     navigation.style.display = 'flex';
-    navigation.style.flexDirection = 'column';
+    navigation.style.flexDirection = 'column-reverse';
     navigation.style.width = '95%';
     navList.style.listStyleType = 'none';
     header.style.display = 'flex';
-    header.style.flexDirection = 'column';
+    header.style.flexDirection = 'column-reverse';
     menuOpen.style.display = 'none';
 });
 

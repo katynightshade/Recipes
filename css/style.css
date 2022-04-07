@@ -167,6 +167,10 @@ section {
     margin-bottom: 7px;
 }
 
+.pick-steps {
+    margin: 16px 20px;
+}
+
 /*wow settings*/
 
 .wow-page {
@@ -470,7 +474,85 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 3px solid rgb(138, 133, 131);
-    background-color: rgb(138, 133, 131);
+    border: 3px solid rgb(243, 237, 209);
+    background-color: rgb(243, 237, 209);
+    border-radius: 5px;
+}
+
+/*botw settings*/
+
+.botw-page {
+    height: 100%;
+    margin: 10px;
+    display: inline-block;
+    font-family: 'Cinzel', sans-serif;
+    background-image: linear-gradient(rgb(142, 201, 66), rgb(243, 235, 201));
+}
+
+.botw-links {
+    text-decoration: none;
+    cursor: pointer;
+    color: #1e515a;
+}
+
+.botw-page > .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 95vw;
+    background-color: rgb(243, 235, 201);
+    border-radius: 5px;
+}
+
+.botw-title {
+    text-align: center;
+    text-decoration: none;
+    color: #5cc2eb;
+    margin: 0 3%;
+    font-size: 13px;
+}
+
+
+.hero-botw {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+}
+
+.title-botw {
+    font-size: 25px;
+    color: rgb(78, 62, 16);
+    text-align: center;
+}
+
+.botw-citation {
+    padding: 15px;
+    border: 2px solid #5cc2eb;
+    background-color: #5cc2eb;
+    border-radius: 5px;
+}
+
+.botwcite-link {
+    text-decoration: none;
+    color: rgb(78, 62, 16);
+}
+
+.botwdir-title {
+    text-align: center;
+    color: #5cc2eb;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.botw-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #5cc2eb;
+    background-color: #5cc2eb;
     border-radius: 5px;
 }
