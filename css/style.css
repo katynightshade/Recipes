@@ -574,7 +574,7 @@ section {
 .atla-links {
     text-decoration: none;
     cursor: pointer;
-    color: #1e515a;
+    color: #97cad3;
 }
 
 .atla-page > .header {
@@ -612,8 +612,8 @@ section {
 
 .atla-citation {
     padding: 15px;
-    border: 2px solid #5cc2eb;
-    background-color: #5cc2eb;
+    border: 2px solid rgb(91, 169, 241);
+    background-color: rgb(91, 169, 241);
     border-radius: 5px;
 }
 
