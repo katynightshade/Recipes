@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Ubuntu:wght@400;700&display=swap');
 
 html {
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 .main-page {
@@ -80,6 +80,10 @@ section {
     justify-content: space-evenly;
     text-align: center;
     padding: 20px;
+}
+
+#nerd-box {
+    display: none;
 }
 
 .links-out {
@@ -179,6 +183,7 @@ section {
 
 .wow-page {
     height: 100%;
+    width: 95vw;
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
@@ -254,6 +259,7 @@ section {
 
 .hp-page {
     height: 100%;
+    width: 95vw;
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
@@ -334,6 +340,7 @@ section {
 
 .lotr-page {
     height: 100%;
+    width: 95vw;
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
@@ -411,6 +418,7 @@ section {
 
 .dune-page {
     height: 100%;
+    width: 95vw;
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
@@ -487,6 +495,7 @@ section {
 
 .botw-page {
     height: 100%;
+    width: 95vw;
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
@@ -546,7 +555,7 @@ section {
 
 .botwdir-title {
     text-align: center;
-    color: #5cc2eb;
+    color: rgb(243, 235, 201);
     text-decoration: none;
     font-size: 13px;
 }
@@ -565,6 +574,7 @@ section {
 
 .atla-page {
     height: 100%;
+    width: 95vw;
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
@@ -624,7 +634,7 @@ section {
 
 .atladir-title {
     text-align: center;
-    color: #5cc2eb;
+    color: rgb(25, 121, 41);
     text-decoration: none;
     font-size: 13px;
 }
@@ -643,6 +653,7 @@ section {
 
 .ghibli-page {
     height: 100%;
+    width: 95vw;
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
@@ -703,7 +714,7 @@ section {
 
 .ghiblidir-title {
     text-align: center;
-    color: #194430;
+    color: #ebe95c;
     text-decoration: none;
     font-size: 13px;
 }
@@ -722,6 +733,7 @@ section {
 
 .skyrim-page {
     height: 100%;
+    width: 95vw;
     margin: 10px;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
@@ -790,7 +802,7 @@ section {
 
 .skyrimdir-title {
     text-align: center;
-    color: #194430;
+    color: #b4b4b4;
     text-decoration: none;
     font-size: 13px;
 }
@@ -803,4 +815,40 @@ section {
     border: 3px solid #5a799c;
     background-color: #5a799c;
     border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-page, .wow-page, .hp-page, .lotr-page, .dune-page, .botw-page, .atla-page, .ghibli-page, .skyrim-page {
+        margin: 20px;
+    }
+    .mobile-menu {
+        text-align: left;
+        width: 25px;
+    }
+    .header {
+        justify-content: space-evenly;
+    }
+    .title, .wow-title, .hp-title, .lotr-title, .dune-title, .botw-title, .atla-title, .ghibli-title, .skyrim-title {
+        margin: 1% 3%;
+        font-size: 20px;
+    }
+    .hero, .box-text, .footer, nav {
+        font-size: 20px;
+    }
+    .sections {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #nerd-box {
+        display: flex;
+        text-align: center;
+    }
+    .wow-section, .hp-section, .lotr-section, .dune-section, .botw-section, .atla-section, .ghibli-section, .skyrim-section, .wowdir-title, .hpdir-title, .lotrdir-title, .dunedir-title, .botwdir-title, .atladir-title, .ghiblidir-title, .skyrimdir-title {
+        font-size: 30px;
+    }
+    .title-wow1, .title-atla, .title-botw, .title-dune, .title-ghibli, .title-hp, .title-lotr, .title-skyrim {
+        font-size: 35px;
+    }
+    .recipe-page {
+        font-size: 20px;
+    }
 }
