@@ -136,8 +136,10 @@ section {
 }
 
 .hero-img {
+    width: auto;
     max-width: 90vw;
-    max-height: 50vh;
+    height: auto;
+    max-height: 65vh;
 }
 
 .img-group {
@@ -851,8 +853,60 @@ section {
     .recipe-page {
         font-size: 20px;
     }
+    .hero-img {
+        width: auto;
+        max-width: 90vw;
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-    
+    .mobile-menu {
+        width: 35px;
+    }
+    .title, .wow-title, .hp-title, .lotr-title, .dune-title, .botw-title, .atla-title, .ghibli-title, .skyrim-title {
+        margin: 1% 3%;
+        font-size: 25px;
+    }
+    .hero, .box-text, .btn-back, .footer, nav {
+        font-size: 25px;
+    }
+    .sections {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #nerd-box {
+        display: none;
+    }
+    .title-wow1, .title-atla, .title-botw, .title-dune, .title-ghibli, .title-hp, .title-lotr, .title-skyrim {
+        font-size: 50px;
+    }
+    .recipe-page {
+        font-size: 25px;
+    }
+    .hero-wow1, .hero-atla, .hero-botw, .hero-dune, .hero-ghibli, .hero-hp, .hero-img, .hero-lotr, .hero-skyrim {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        max-width: 95vw;
+    }
+    .hero-img, .img-group {
+        max-width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .mobile-menu {
+        width: 45px;
+    }
+    .hero, .box-text, .footer, nav {
+        font-size: 35px;
+    }
+    .wow-section, .hp-section, .lotr-section, .dune-section, .botw-section, .atla-section, .ghibli-section, .skyrim-section, .wowdir-title, .hpdir-title, .lotrdir-title, .dunedir-title, .botwdir-title, .atladir-title, .ghiblidir-title, .skyrimdir-title {
+        font-size: 40px;
+    }
+    .hero-wow1, .hero-atla, .hero-botw, .hero-dune, .hero-ghibli, .hero-hp, .hero-img, .hero-lotr, .hero-skyrim {
+        justify-content: space-evenly;
+    }
 }
